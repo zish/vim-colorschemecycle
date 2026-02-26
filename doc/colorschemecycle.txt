@@ -1,0 +1,47 @@
+colorschemecycle.txt*	cycle through installed Vim colorschemes	Feb 18, 2026
+
+Author:   Jeremy Melanson <1080872+zish@users.noreply.github.com>
+Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
+           The VIM LICENSE applies to colorschemecycle.vim and
+	   colorschemecycle.txt (see |copyright|) except use "colorschemecycle" instead
+	   of "Vim".
+	   No warranty, express or implied.  Use At-Your-Own-Risk.
+
+==============================================================================
+1. Contents				*colorschemecycle *colorschmeecycle-contents*
+   1. Contents         ...................................|colorschemecycle-contents|
+   2. colorschemecycle Manual   ...................................|colorschemecycle|
+   3. colorschemecycle History  ...................................|colorschemecycle-history|
+
+==============================================================================
+2. Manual						*colorschemecycle*
+
+	USAGE~
+		<CTRL-n>   -- Cycle color scheme forward ([n]ext)
+		<CTRL-p>   -- Cycle color scheme backward ([p]revious)
+
+	CUSTOM_KEYS~
+		Custom key sequences can be defined for colorschemecycle, by
+		defining the values for *g:csc_next_key* and *g:csc_previous_key*
+		in your vimrc file.
+
+		Here are some examples:
+		- " Use <CTRL-SHIFT-k> and <CTRL-k>
+		- let g:csc_next_key = "C-S-k"
+		- let g:csc_previous_key = "C-k"
+
+	        - " Defaults:
+		- let g:csc_next_key = "C-n"
+		- let g:csc_previous_key = "C-p"
+
+	RESULT~
+		By pressing either key sequence, the colorschemes are cycled.
+
+
+==============================================================================
+3. colorschemecycle History			*colorschemecycle-history* {{{1
+  v0.0.01a	Feb 26, 2026	* (Jeremy Melasnon) Initial commit to repository.
+
+==============================================================================
+Modelines: {{{1
+vim:tw=78:ts=8:ft=help:fdm=marker:
