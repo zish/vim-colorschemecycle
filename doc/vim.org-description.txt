@@ -1,0 +1,11 @@
+Provides a mechanism in which the user can cycle through locally-installed Vim ColorSchemes, by using keystrokes.
+
+Current features:
+- Easily cycle back-and-forth between locally-available Vim colorschemes using keystrokes.
+- Default keystrokes are \<C-n\> and \<C-p\> but can be customised.
+
+Future features that will be added soon:
+- Automatically save the loaded colorscheme as your default in .vimrc.
+- Override Vim colorschemes for recognised Vim filetypes in .vimrc.
+
+This plugin was tested to work with Vim versions 8.0 to newer, as well as NeoVim.

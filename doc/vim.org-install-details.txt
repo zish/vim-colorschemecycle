@@ -1,0 +1,31 @@
+Using pathogen (recommended).
+a) Using source:
+<code>
+    $ git clone https://github.com/zish/vim-colorschemecycle.git ~/.vim/bundle/vim-colorschemecycle/
+    $ vi
+    :Helptags
+    :help colorschemecycle
+</code>
+    \<C-n\> (Cycle to [n]ext colorscheme.
+    \<C-p\> (Cycle to [p]revious colorscheme.
+b) Using .zip archive:
+<code>
+    $ mkdir ~/.vim/bundle/vim-colorschemecycle/
+    $ unzip vim-colorscheme.zip -d ~/.vim/bundle/vim-colorschemecycle/
+    $ vi
+    :Helptags
+    :help colorschemecycle
+</code>
+    \<C-n\> (Cycle to [n]ext colorscheme)
+    \<C-p\> (Cycle to [p]revious colorscheme)
+
+Plain install without pathogen. (messy)
+a) Using .zip archive:
+<code>
+    $ unzip vim-colorcycle.zip -d ~/.vim/
+    $ vi
+    :Helptags
+    :help colorschemecycle
+</code>
+    \<C-n\> (Cycle to [n]ext colorscheme)
+    \<C-p\> (Cycle to [p]revious colorscheme)

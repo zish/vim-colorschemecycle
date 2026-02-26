@@ -41,6 +41,7 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
 ==============================================================================
 3. colorschemecycle History			*colorschemecycle-history* {{{1
   v0.0.01a	Feb 26, 2026	* (Jeremy Melasnon) Initial commit to repository.
+  v0.0.011a	Feb 26, 2026	* (Jeremy Melasnon) Added vim.org txt to repo
 
 ==============================================================================
 Modelines: {{{1
