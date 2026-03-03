@@ -17,25 +17,57 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
 2. Manual						*colorschemecycle*
 
 	USAGE~
-		<CTRL-n>   -- Cycle color scheme forward ([n]ext)
-		<CTRL-p>   -- Cycle color scheme backward ([p]revious)
+		<CTRL-n>   -- Cycle colorscheme forward ([n]ext)
+		<CTRL-p>   -- Cycle colorscheme backward ([p]revious)
+		:SC        -- Commit the current colorscheme to the save file.
+		              This command can be customized by setting the variable
+		              'g:csc_save_command' to the desired value in your
+			      .vimrc file.
 
-	CUSTOM_KEYS~
+	CUSTOMIZATION~
 		Custom key sequences can be defined for colorschemecycle, by
 		defining the values for *g:csc_next_key* and *g:csc_previous_key*
 		in your vimrc file.
 
-		Here are some examples:
+		Here are some custom keystroke examples:
 		- " Use <CTRL-SHIFT-k> and <CTRL-k>
 		- let g:csc_next_key = "C-S-k"
 		- let g:csc_previous_key = "C-k"
 
-	        - " Defaults:
+	        - " Default keystrokes:
 		- let g:csc_next_key = "C-n"
 		- let g:csc_previous_key = "C-p"
 
+		Manual colorscheme save command (Defaut is *:SC*).
+		- " Use ':SaveColorSchemeToSaveFile' instead of the default:
+		- let g:csc_save_command = 'SaveColorSchemeToSaveFile'
+
+		- " Default is ':SC':
+		- let g:csc_save_command = 'SC'
+
+		*g:autosave* - Auto-save the new colorscheme, any time the
+		':colorscheme'command is invoked.
+		- let g:autosave = 'true'
+
+		- " Default is 'false':
+		- let g:autosave = 'false'
+
+		*g:csc_save_file* - Colorscheme save file location.
+		- "Set the save file to a custom location:
+		- let g:csc_save_file = '/tmp/colorscheme.save'
+
+		- " Default is in your Vim config dir:
+		- let g:csc_save_file = stdpath('config') . '/csc.save'
+
 	RESULT~
 		By pressing either key sequence, the colorschemes are cycled.
+
+		If 'g:autosave' is set to 'true', this plugin will attempt to
+		record the new colorscheme in the save file, any time the
+		':colorscheme' command is invoked.
+
+		If the colorscheme save command is invoked, the current
+		colorscheme is written to the save file.
 
 
 ==============================================================================
@@ -43,6 +75,7 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
   v0.0.01a	Feb 26, 2026	* (Jeremy Melanson) Initial commit to repository.
   v0.0.011a	Feb 26, 2026	* (Jeremy Melanson) Added vim.org txt to repo
   v0.0.012a	Feb 26, 2026	* (Jeremy Melanson) Added Makefile, .gitignore
+  v0.0.02a	Mar 03, 2026	* (Jeremy Melanson) Load/Save colorscheme
 
 ==============================================================================
 Modelines: {{{1
