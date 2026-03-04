@@ -76,6 +76,7 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
   v0.0.011a	Feb 26, 2026	* (Jeremy Melanson) Added vim.org txt to repo
   v0.0.012a	Feb 26, 2026	* (Jeremy Melanson) Added Makefile, .gitignore
   v0.0.02a	Mar 03, 2026	* (Jeremy Melanson) Load/Save colorscheme
+  v0.0.021a	Mar 03, 2026	* (Jeremy Melanson) Fix Makefile spaces to tabs
 
 ==============================================================================
 Modelines: {{{1
