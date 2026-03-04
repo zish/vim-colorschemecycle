@@ -43,7 +43,11 @@ if !exists('g:csc_previous_key')
 endif
 
 if !exists('g:csc_save_file')
-  let g:csc_save_file = stdpath('config') . '/csc.save'
+	if has('nvim')
+	  let g:csc_save_file = stdpath('config') . '/csc.save'
+	else
+	  let g:csc_save_file = $HOME . '/.vim/csc.save'
+	endif
 endif
 
 " If g:csc_autosave is set to 'true', Vim will automatically call

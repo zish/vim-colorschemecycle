@@ -57,7 +57,8 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
 		- let g:csc_save_file = '/tmp/colorscheme.save'
 
 		- " Default is in your Vim config dir:
-		- let g:csc_save_file = stdpath('config') . '/csc.save'
+		- Neovim: let g:csc_save_file = stdpath('config') . '/csc.save'
+		- Vim:    let g:csc_save_file = '~/csc.save'
 
 	RESULT~
 		By pressing either key sequence, the colorschemes are cycled.
@@ -77,6 +78,7 @@ Copyright: (c) 2026 by Jeremy Melanson			*colorschemecycle-copyright*
   v0.0.012a	Feb 26, 2026	* (Jeremy Melanson) Added Makefile, .gitignore
   v0.0.02a	Mar 03, 2026	* (Jeremy Melanson) Load/Save colorscheme
   v0.0.021a	Mar 03, 2026	* (Jeremy Melanson) Fix Makefile spaces to tabs
+  v0.0.022a	Mar 03, 2026	* (Jeremy Melanson) Fix compat with Vim
 
 ==============================================================================
 Modelines: {{{1
